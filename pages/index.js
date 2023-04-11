@@ -10,7 +10,7 @@ export default function Home() {
   const {Configuration,OpenAIApi} = require("openai");
 
   const configuration = new Configuration({
-      apiKey: "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",
+      apiKey: process.env.OPENAI_API_KEY,
   });
   const openai = new OpenAIApi(configuration);
 
